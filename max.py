@@ -103,7 +103,7 @@ settings = {
     "man1":"",
     "man2":"",
     "man3":"",
-    "message":"บัญชีนี้ได้การป้องกันโดย VGBOT ระบบได้ทำการบล็อคคุณอัตโนมัติ",
+    "message":"บัญชีนี้ได้การป้องกันโดย แม้คนายมันหล่อ ระบบได้ทำการบล็อคคุณอัตโนมัติ",
     "comment":"Thanks for add me",
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
@@ -256,22 +256,6 @@ def sendMessageWithMention(to, lineMID):
         logError(error)
  
 def myhelp():
-    myHelp = """
-╔══════════════┓
-      VGBOT
-╚══════════════┛
-╔═════════════════════┓
-╠❋►คำสั่ง = คำสั่ง
-╠❋►คำสั่ง2 = คำสั่งเชลบอท
-╠❋►คำสั่ง3 = คำสั่งการแทค
-╠❋►คำสั่ง4 = คำสั่งการตั้งค่า
-╠❋►คำสั่ง5 = คำสั่งค้นหา
-╠❋►คำสั่ง6 = คำสั่งกลุ่ม
-╠❋►คำสั่ง7 = คำสั่งเลียนแบบ
-╠❋►คำสั่ง8 = คำสั่งล่องหน
-    return myHelp
-
-def myhelp():
     myHelp = """╔══════════════┓
 ╠        AssmaxBotline
 ╚══════════════┛
@@ -327,7 +311,7 @@ def listgrup():
     return listGrup
 
 def socmedia():
-    socMedia = """❋►คำสั่งแทค⍣VGBOT⍣
+    socMedia = """❋►คำสั่งแทค⍣Assmax⍣
 ╔═════════════════════┓
 ╠❋►คท @ ➠ แทคคนที่จะเอาคท
 ╠❋►มิด @  ➠ ลงmidคนอื่น
@@ -348,7 +332,7 @@ def socmedia():
     return socMedia
     
 def helpset():
-    helpSet = """❋►คำสั่ง⍣VGBOT⍣
+    helpSet = """❋►คำสั่ง⍣Assmax⍣
 ╔══════════════════┓
 ╠❋►➠ คอนแทคแม้ค
 ╠❋► มิด  ➠ MID เรา
@@ -382,7 +366,7 @@ def helpset():
     return helpSet 
 
 def helpkicker():
-    helpKicker = """คำสั่งค้นหา⍣VGBOT⍣
+    helpKicker = """คำสั่งค้นหา⍣Assmax⍣
 ╔════════════════════┓
 ╠❋► พูด ข้อความ ➠ สั่งสิริพูด
 ╠❋► ยูทูป ข้อความ ➠ ค้นหาในยูทูป
@@ -393,7 +377,7 @@ def helpkicker():
     return helpKicker
     
 def helpsetting():
-    helpSetting = """คำสั่งกลุ่ม⍣VGBOT⍣
+    helpSetting = """คำสั่งกลุ่ม⍣Assmax⍣
 ╔══════════════════┓
 ╠❋► กลุ่ม ➠ ข้อมูลกลุ่ม
 ╠❋► ไอดีกลุ่ม ➠ไอดีห้อง
@@ -416,7 +400,7 @@ def helpsetting():
     return helpSetting
 
 def helptexttospeech():
-    helpTextToSpeech =   """❋►คำสั่งเลียนแบบ⍣VGBOT⍣
+    helpTextToSpeech =   """❋►คำสั่งเลียนแบบ⍣Assmax⍣
 ❇ เลียนแบบ on/off 
 ❇ เลียนแบบ 
 ❇ เพิ่มเลียนแบบ (@) 
@@ -424,7 +408,7 @@ def helptexttospeech():
     return helpTextToSpeech
     
 def helplanguange():
-    helpLanguange =    """คำสั่งล่องหน⍣VGBOT⍣
+    helpLanguange =    """คำสั่งล่องหน⍣Assmax⍣
 ℹ!แทค
 ℹ!มิด
 ℹ!คท"""
@@ -585,7 +569,7 @@ def lineBot(op):
                         if g.displayName in "":
                             targets.append(g.mid)
                     if targets == []:
-                        line.sendMessage(to, "ℹไม่มีคนใส่ล่องหนในกลุ่มนี้ครับ✅")
+                        line.sendMessage(to, "ℹไม่มีคนใส่ร่องหนในกลุ่มนี้ครับ✅")
                     else:
                         mc = ""
                         for target in targets:
@@ -598,7 +582,7 @@ def lineBot(op):
                         if g.displayName in "":
                             lists.append(g.mid)
                     if lists == []:
-                        line.sendMessage(to, "ℹไม่มี MID คนใส่ล่องหนครับ✅")
+                        line.sendMessage(to, "ℹไม่มี MID คนใส่ร่องหนครับ✅")
                     else:
                         mc = ""
                         for mi_d in lists:
@@ -611,7 +595,7 @@ def lineBot(op):
                         if g.displayName in "":
                             lists.append(g.mid)
                     if lists == []:
-                        line.sendMessage(to, "ℹไม่มีคนใส่ล่องหนในกลุ่มนี้ครับ✅")
+                        line.sendMessage(to, "ℹไม่มีคนใส่ร่องหนในกลุ่มนี้ครับ✅")
                     else:
                         for ls in lists:
                             contact = line.getContact(ls)
@@ -656,9 +640,9 @@ def lineBot(op):
                             mc += "◉ " + line.getContact(mi_d).displayName + "\n"
                         line.sendMessage(to, mc)              
                 elif text.lower() == '.เทส':
-                    ki.sendMessage(to, "บอทVGBOTยังอยู่ครับ")
+                    ki.sendMessage(to, "บอทแม้คนายมันหล่อยังอยู่ครับ")
                 elif text.lower() == 'เทส':
-                    line.sendMessage(to, "กำลังตรวจสอบ:▒...0%")
+                    line.sendMessage(to, "ท่าถึง100นั้นเเละความหล่อแม้คกำลังโหลด:▒...0%")
                     line.sendMessage(to, "█▒... 10.0%")
                     line.sendMessage(to, "██▒... 20.0%")
                     line.sendMessage(to, "███▒... 30.0%")
@@ -669,7 +653,7 @@ def lineBot(op):
                     line.sendMessage(to, "████████▒... 80.0%")
                     line.sendMessage(to, "█████████▒... 90.0%")
                     line.sendMessage(to, "███████████..100.0%")
-                    line.sendMessage(to, " VGBOTยังอยู่ค่ะ✔")
+                    line.sendMessage(to, " แม้คหล่อนะยังอยู่ครับ✔")
                 elif msg.text.lower() == ".ออน":
                     line.sendMessage(msg.to,(str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[1].split(":")[0]+" ชั่วโมง " if "days" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[1].split(":")[0]+" ชั่วโมง " if "day" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(":")[0]+" ชั่วโมง ")+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[1]+" นาที "+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[2]+" วินาที")               
                 elif "คท " in msg.text:
@@ -769,7 +753,7 @@ def lineBot(op):
                             pass
                 elif text.lower() == 'sp':
                     start = time.time()
-                    line.sendMessage(to,"ความเร็วของ VGBOT...")
+                    line.sendMessage(to,"ความเร็วของ แม้ค...")
                     elapsed_time = time.time() - start
                     line.sendMessage(to,format(str(elapsed_time)))	
                 elif text.lower() == 'รีบอท':
@@ -790,7 +774,7 @@ def lineBot(op):
                         grouplist = line.getGroupIdsJoined()
                         contactlist = line.getAllContactIds()
                         blockedlist = line.getBlockedContactIds()
-                        ret_ = "╔══[  VGBOT ]" 
+                        ret_ = "╔══[  Assmax ]" 
                         ret_ += "\n╠🌟⏩ ชื่อ ═ {}".format(contact.displayName)
                         ret_ += "\n╠🌟⏩ กลุ่ม ═ {}".format(str(len(grouplist)))
                         ret_ += "\n╠🌟⏩ เพื่อน ═ {}".format(str(len(contactlist)))
@@ -805,7 +789,7 @@ def lineBot(op):
 #==============================================================================#
                 elif text.lower() == 'เชคค่า':
                     try:
-                        ret_ = "╔════[  สถานะ VGBOT ]═════┓"
+                        ret_ = "╔════[  สถานะ Assmax ]═════┓"
                         if settings["บอททำงานปกติครับ"] == True: ret_ += "\n╠❂☞ รับบล็อคออโต้ ✔"
                         else: ret_ += "\n╠🔀 รับบล็อคออโต้    ✘ "
                         if settings["autoJoin"] == True: ret_ += "\n╠❂☞ เข้าห้องออโต้ ✔"
@@ -1087,7 +1071,7 @@ def lineBot(op):
                     for target in targets:
                         try:
                             settings["mimic"]["target"][target] = True
-                            line.sendMessage(msg.to,"เลียนแบบคนนี้แล้วค่ะ")
+                            line.sendMessage(msg.to,"เลียนแบบคนนี้แล้วแล้ว")
                             break
                         except:
                             line.sendMessage(msg.to,"Added Target Fail !")
@@ -1101,14 +1085,14 @@ def lineBot(op):
                     for target in targets:
                         try:
                             del settings["mimic"]["target"][target]
-                            line.sendMessage(msg.to,"ลบเลียนแบบคนนี้แล้วค่ะ")
+                            line.sendMessage(msg.to,"ลบเลียนแบบคนนี้แล้ว")
                             break
                         except:
                             line.sendMessage(msg.to,"Deleted Target Fail !")
                             break
                 elif text.lower() == 'เลียนแบบ':
                     if settings["mimic"]["target"] == {}:
-                        line.sendMessage(msg.to,"เปิดระบบเลียบแบบแล้วค่ะ😝")
+                        line.sendMessage(msg.to,"เปิดระบบเลียบแบบแล้ว😝")
                     else:
                         mc = "╔══[ จำนวนคนที่เลียนแบบ ]"
                         for mi_d in settings["mimic"]["target"]:
@@ -1178,7 +1162,7 @@ def lineBot(op):
                         gPending = str(len(group.invitee))
                     if group.preventedJoinByTicket == True:
                         gQr = "ปิด"
-                        gTicket = "VGBOT"
+                        gTicket = "Assmax"
                     else:
                         gQr = "Terbuka"
                         gTicket = "https://line.me/R/ti/g/{}".format(str(line.reissueGroupTicket(group.id)))
@@ -1312,7 +1296,7 @@ def lineBot(op):
                         except:
                             pass	
                 elif msg.text.lower() == "MIDกลุ่ม":
-                    line.sendText(msg.to,"กรุณารอสักครู่")
+                    line.sendText(msg.to,"กรุณารอสักครู่ ใจเย็นๆ")
                     all = line.getGroupIdsJoined()
                     text = ""
                     cnt = 0
@@ -1656,7 +1640,7 @@ def lineBot(op):
                     for ids in kontak:
                         msgs+="\n[%i] %s" % (num, ids.displayName)
                         num=(num+1)
-                    msgs+="\n════VGBOT════\n\nจำนวน : %i" % len(kontak)
+                    msgs+="\n════Assmax════\n\nจำนวน : %i" % len(kontak)
                     line.sendMessage(receiver, msgs)
                 elif text.lower() == 'tagall':
                     group = line.getGroup(msg.to)
@@ -3388,7 +3372,7 @@ def lineBot(op):
                         if settings["blacklist"] == {}:
                             line.sendMessage(msg.to,"ไม่พบผู้ติดดำ")
                         else:
-                            line.sendMessage(msg.to,"กำลังเช็ค...")
+                            line.sendMessage(msg.to,"มึงรอกูแปปไอสัสกำลังเช็ค...")
                             num=1
                             msgs="══════════รายชื่อผู้ติดดำ═════════"
                             for mi_d in settings["blacklist"]:
