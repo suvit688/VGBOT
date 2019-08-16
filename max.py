@@ -3370,7 +3370,7 @@ def lineBot(op):
                         if settings["blacklist"] == {}:
                             line.sendMessage(msg.to,"ไม่พบผู้ติดดำ")
                         else:
-                            line.sendMessage(msg.to,"มึงรอกูแปปไอสัสกำลังเช็ค...")
+                            line.sendMessage(msg.to,"กำลังเช็ค...")
                             num=1
                             msgs="══════════รายชื่อผู้ติดดำ═════════"
                             for mi_d in settings["blacklist"]:
