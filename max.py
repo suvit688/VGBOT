@@ -103,7 +103,7 @@ settings = {
     "man1":"",
     "man2":"",
     "man3":"",
-    "message":"บัญชีนี้ได้การป้องกันโดย แม้คนายมันหล่อ ระบบได้ทำการบล็อคคุณอัตโนมัติ",
+    "message":"บัญชีนี้ได้การป้องกันโดย VGBOT ระบบได้ทำการบล็อคคุณอัตโนมัติ",
     "comment":"Thanks for add me",
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
