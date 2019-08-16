@@ -258,7 +258,7 @@ def sendMessageWithMention(to, lineMID):
 def myhelp():
     myHelp = """
 ╔══════════════┓
-      VGBOT
+VGBOT @vegus688s
 ╚══════════════┛
 ╔═════════════════════┓
 ╠❋►คำสั่ง = คำสั่ง
