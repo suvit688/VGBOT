@@ -68,7 +68,7 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 #==============================================================================#
-settings = {
+settings = { 
     "contact": False,
     "timeline": False,
     "autoAdd": True,
@@ -275,7 +275,6 @@ def myhelp():
 
 def listgrup():
     listGrup =  """►คำสั่งตั้งค่า VGBOT
-╔══════════════════════┓
 ╠❋►เปิดเข้า ➠เข้ากลุ่มออโต้
 ╠❋►ปิดเข้า ➠ปิดเข้ากลุ่มออโต้
 ╠❋►เปิดบล็อค ➠ออโต้บล็อค
@@ -312,7 +311,6 @@ def listgrup():
 
 def socmedia():
     socMedia = """❋►คำสั่งแทค VGBOT
-╔═════════════════════┓
 ╠❋►คท @ ➠ แทคคนที่จะเอาคท
 ╠❋►มิด @  ➠ ลงmidคนอื่น
 ╠❋►ชื่อ @ ➠ ลงชื่อคนอื่น
@@ -324,7 +322,7 @@ def socmedia():
 ╠❋►ข้อมูล @  ➠ ดูข้อมูลคนอื่น
 ╠❋►ไป @  ➠ เตะละเชิญกลับ
 ╠❋►ห้ามโปร @ ➠ เตะด้วยการแทคชื่อ
-╠❋►คำสั่งห้ามโปร  ใว้ใช้กับคนคนเล่นบอท
+╠❋►คำสั่งห้ามโปร  ใว้ใช้กับคนคนเล่น
 ╠❋►จุก @  ➠ เตะกลับแชท
 ╠❋►แอดมิน @  ➠ เพิ่มแอดมิน
 ╠❋►ลบแอดมิน @  ➠ ลบแอดมิน
@@ -333,7 +331,6 @@ def socmedia():
 
 def helpset():
     helpSet = """❋►คำสั่ง VGBOT
-╔══════════════════┓
 ╠❋►➠ คอนแทคแม้ค
 ╠❋► มิด  ➠ MID เรา
 ╠❋►ชื่อ  ➠ ชื่อเรา
@@ -367,7 +364,6 @@ def helpset():
 
 def helpkicker():
     helpKicker = """คำสั่งค้นหา VGBOT
-╔════════════════════┓
 ╠❋► พูด ข้อความ ➠ สั่งสิริพูด
 ╠❋► ยูทูป ข้อความ ➠ ค้นหาในยูทูป
 ╠❋► เขียน ข้อความ ➠ เขียน
@@ -378,7 +374,6 @@ def helpkicker():
 
 def helpsetting():
     helpSetting = """คำสั่งกลุ่ม VGBOT
-╔══════════════════┓
 ╠❋► กลุ่ม ➠ ข้อมูลกลุ่ม
 ╠❋► ไอดีกลุ่ม ➠ไอดีห้อง
 ╠❋► ชื่อกลุ่ม ➠ ชื่อห้อง
@@ -769,7 +764,7 @@ def lineBot(op):
                     try:
                         arr = []
                         owner = "u46edcb0e45dff75ec4ae25e12d0d7eb0"
-                        creator = line.getContact(owner)
+                        creator = line.getContact(l)
                         contact = line.getContact(lineMID)
                         grouplist = line.getGroupIdsJoined()
                         contactlist = line.getAllContactIds()
